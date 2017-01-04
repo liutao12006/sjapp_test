@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerInParent="true"
+    android:paddingLeft="@dimen/app_margin_small"
+    android:background="@color/white"
+    android:layout_marginLeft="2dp">
+
+    <ImageView
+        android:id="@+id/pro_d_img"
+        android:layout_width="110dp"
+        android:layout_height="80dp"
+        android:scaleType="fitXY"
+        android:layout_margin="@dimen/app_margin_small"
+        android:contentDescription="@string/app_pic"/>
+    <TextView
+        android:id="@+id/pro_d_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="名字名字"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="@dimen/small_middle_text_size"
+        android:textColor="@color/black"
+        android:padding="@dimen/app_margin_small"/>
+    <TextView
+        android:id="@+id/pro_d_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="xxxxxxxxx"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="@dimen/small_text_size"
+        android:paddingLeft="@dimen/app_margin_small"/>
+    <TextView
+        android:id="@+id/pro_d_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥100"
+        android:textColor="@color/font_red"
+        android:padding="@dimen/app_margin_small"/>
+
+</LinearLayout>

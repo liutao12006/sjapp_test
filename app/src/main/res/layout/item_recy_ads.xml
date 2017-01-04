@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/app_margin">
+
+    <TextView
+        android:id="@+id/item_ads_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="名字名字名字"
+        android:textSize="@dimen/medium_large_text_size"/>
+
+    <TextView
+        android:id="@+id/item_ads_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="默认"
+        android:textColor="@color/white"
+        android:background="@color/font_red"
+        android:padding="3dp"
+        android:textSize="@dimen/micro_small_text_size"
+        android:layout_toRightOf="@+id/item_ads_name"
+        android:layout_marginLeft="@dimen/app_margin"/>
+
+    <TextView
+        android:id="@+id/item_ads_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sssssss"
+        android:layout_below="@+id/item_ads_name"
+        android:layout_marginTop="@dimen/app_margin_small"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/right"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_pic"/>
+
+</RelativeLayout>

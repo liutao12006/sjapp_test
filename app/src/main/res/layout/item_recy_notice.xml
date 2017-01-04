@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_notice_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="16-03-30"
+        android:textColor="@color/white"
+        android:background="@mipmap/time_back"
+        android:layout_marginTop="@dimen/app_margin"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/layout_stroke"
+        android:layout_marginTop="@dimen/app_margin"
+        android:layout_marginLeft="@dimen/app_margin_small"
+        android:layout_marginRight="@dimen/app_margin_small">
+        <TextView
+            android:id="@+id/item_notice_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="名称名称名称名称名称"
+            android:textColor="@color/black"
+            android:padding="@dimen/app_margin" />
+        <TextView
+            android:id="@+id/item_notice_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="内容内容内容内容内容内容内容内容"
+            android:textSize="@dimen/small_middle_text_size"
+            android:padding="@dimen/app_margin"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,109 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'daguanjia'
+            keyPassword 'zzwbkj'
+            storeFile file('C:/Users/Administrator/aboutProject/mytwo.jks')
+            storePassword 'zzwbkj'
+        }
+    }
+
+    sourceSets {
+        main {                jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    compileSdkVersion 23
+    buildToolsVersion '23.0.3'
+    defaultConfig {
+        applicationId "wbkj.sjapp"
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 4
+        versionName "1.1.4"
+        signingConfig signingConfigs.config
+
+        ndk {
+            //选择要添加的对应cpu类型的.so库。 极光推送
+            abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a','x86', 'x86_64', 'mips', 'mips64'
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+        }
+        manifestPlaceholders = [
+                JPUSH_PKGNAME : applicationId,
+                JPUSH_APPKEY : "dd0af79bc512db3afa040748", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL : "developer-default", //暂时填写默认值即可.
+         ]
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+
+
+    productFlavors{
+        xiaomi{}
+        qihu360{}
+        wandoujia{}
+        yingyongbao{}
+        baidu{}
+    }
+
+    productFlavors.all{
+        flavor ->  flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+    }
+
+    packagingOptions {
+        exclude 'META-INF/maven/com.squareup.picasso/picasso/pom.xml'
+        exclude 'META-INF/maven/com.squareup.picasso/picasso/pom.properties'
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.0.0'
+    compile 'com.android.support:recyclerview-v7:24.0.0'
+    compile files('libs/gson-2.3.1.jar')
+    compile files('libs/okhttp-2.7.5.jar')
+    compile files('libs/okhttp-urlconnection-2.0.0-RC1.jar')
+    compile files('libs/okio-1.6.0.jar')
+    compile files('libs/MobCommons-2016.0714.1402.jar')
+    compile files('libs/MobTools-2016.0714.1402.jar')
+    compile files('libs/BASE64Encoder.jar')
+    compile name: 'SMSSDK-2.1.1', ext: 'aar'
+    compile project(':multi-image-selector')
+    compile files('libs/alipaySdk-20160802.jar')
+    compile files('libs/libammsdk.jar')
+    compile files('libs/open_sdk_r5756.jar')
+    compile 'com.orhanobut:logger:1.15'
+    compile files('libs/AMap2DMap_2.9.1_AMapLocation_2.8.0_20160825.jar')
+    compile files('libs/Bughd_android_sdk_v1.3.7.jar')
+    compile files('libs/ShareSDK-Core-2.7.7.jar')
+    compile files('libs/ShareSDK-QQ-2.7.7.jar')
+    compile files('libs/ShareSDK-QZone-2.7.7.jar')
+    compile files('libs/ShareSDK-TencentWeibo-2.7.7.jar')
+    compile files('libs/ShareSDK-Wechat-2.7.7.jar')
+    compile files('libs/ShareSDK-Wechat-Core-2.7.7.jar')
+    compile files('libs/ShareSDK-Wechat-Moments-2.7.7.jar')
+
+    //极光推送
+    compile 'cn.jiguang.sdk:jpush:3.0.0'  // 此处以JPush 3.0.0 版本为例例。
+    compile 'cn.jiguang.sdk:jcore:1.0.0'  // 此处以JCore 1.0.0 版本为例例。
+}

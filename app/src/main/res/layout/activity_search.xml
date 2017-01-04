@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.SearchActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/search_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/toolbar_color">
+        <TextView
+            android:id="@+id/search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="搜索"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_middle_text_size"
+            android:padding="@dimen/app_margin"
+            android:layout_margin="@dimen/app_margin"/>
+        <wbkj.sjapp.views.CustomEditView
+            android:id="@+id/search_et_str"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:hint="请输入商家或商品"
+            android:inputType="text"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/black"
+            android:padding="@dimen/app_margin"
+            android:background="@drawable/index_search_corners"/>
+        <requestFocus/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <wbkj.sjapp.views.CustomListView
+                android:id="@+id/search_his_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/app_margin_small">
+            </wbkj.sjapp.views.CustomListView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/gray_white"/>
+            <TextView
+                android:id="@+id/search_btn_del"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:text="清除历史记录"
+                android:padding="@dimen/app_margin"
+                android:textSize="@dimen/small_middle_text_size"
+                android:background="@drawable/index_search_corners"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

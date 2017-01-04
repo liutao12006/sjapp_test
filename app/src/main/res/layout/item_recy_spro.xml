@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/app_margin">
+
+    <ImageView
+        android:id="@+id/spro_img"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:src="@mipmap/demo"
+        android:scaleType="fitXY"
+        android:layout_margin="@dimen/app_margin_small"
+        android:contentDescription="@string/app_pic"/>
+
+    <TextView
+        android:id="@+id/spro_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="xxxxxx"
+        android:layout_toRightOf="@+id/spro_img"
+        android:layout_toEndOf="@+id/spro_img"
+        android:layout_margin="@dimen/app_margin_small"/>
+
+    <TextView
+        android:id="@+id/spro_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="xxxxxxxxxxxxxxx"
+        android:textSize="@dimen/small_middle_text_size"
+        android:ellipsize="end"
+        android:layout_below="@+id/spro_name"
+        android:layout_toRightOf="@+id/spro_img"
+        android:layout_toEndOf="@+id/spro_img"
+        android:layout_alignBottom="@+id/spro_img"
+        android:layout_margin="@dimen/app_margin_small"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/gray_white" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/app_margin_small"
+        android:layout_below="@+id/spro_img">
+        <TextView
+            android:id="@+id/spro_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawableLeft="@mipmap/money"
+            android:drawablePadding="-40dp"
+            android:text="￥1000"
+            android:textSize="@dimen/small_middle_text_size"
+            android:textColor="@color/font_red"
+            android:paddingLeft="40dp"/>
+        <View
+            android:layout_width="0.3dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray_white" />
+        <TextView
+            android:id="@+id/spro_tel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawableLeft="@mipmap/phone"
+            android:drawablePadding="-20dp"
+            android:text="13000000000"
+            android:textSize="@dimen/small_middle_text_size"
+            android:paddingLeft="20dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

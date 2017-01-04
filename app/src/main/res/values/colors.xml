@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#06c1ae</color>
+    <color name="colorPrimaryDark">#06c1ae</color>
+    <color name="colorAccent">#06c1ae</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000</color>
+    <color name="gray">#808080</color>
+    <color name="gray_progress_bar">#11808080</color>
+    <color name="gray_white">#F2F2F2</color>
+    <color name="home_font">#06c1ae</color>
+
+    <color name="blue">#0000ff</color>
+
+    <color name="toolbar_color">#3b8265</color>
+    <color name="font_red">#fb0a8c</color>
+    <color name="green">#108747</color>
+    <color name="backcolor">#10E5C9</color>
+    <color name="teal">#008080</color>
+    <color name="softgreen">#40E0D0</color>
+    <color name="tealtransparent">#88008080</color>
+    <color name="blueviolet">#8a2be2</color>
+    <color name="material_blue_500">#5677fc</color>
+    <color name="ripple">#F06292</color>
+    <color name="accent">#E91E63</color>
+    <color name="accent_pressed">#C2185B</color>
+    <color name="xxx">#6495ED</color>
+
+    <!-- togglebutton -->
+    <color name="popup_main_background">#b0000000</color>
+    <color name="choose_eara_item_press_color">#f4f4f4</color>
+    <color name="no_color">#00000000</color>
+
+    <!-- blood -->
+    <color name="blood_darker">#732219</color>
+    <color name="blood_dark">#a63124</color>
+    <color name="blood_primary">#d94130</color>
+    <color name="blood_light">#f2b6ae</color>
+    <integer-array name="blood">
+        <item>@color/blood_darker</item>
+        <item>@color/blood_dark</item>
+        <item>@color/blood_primary</item>
+        <item>@color/blood_light</item>
+    </integer-array>
+
+    <!--city_event_item-->
+    <color name="event1">#ff5e67</color>
+    <color name="event2">#faa224</color>
+    <color name="event3">#4dc7ee</color>
+    <color name="event4">#ff7ec2</color>
+    <color name="event5">#50d1bf</color>
+    <color name="event6">#ffcf2f</color>
+
+    <color name="event7">#99CC33</color>
+    <color name="event8">#FF0033</color>
+    <color name="event9">#ff5e67</color>
+
+    <!--scan-->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+    <color name="beangreen">#C7EDCC</color>
+
+    <color name="ziti">#91a3ba</color>
+
+</resources>

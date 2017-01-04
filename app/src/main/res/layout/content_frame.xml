@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+     <FrameLayout
+         android:id="@+id/content_frame"
+         android:layout_width="match_parent"
+		 android:layout_height="match_parent"
+         android:layout_above="@+id/bottomRg">
+	</FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/bottomRg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/home_tab_index"
+            style="@style/home_tab_bottom"
+            android:background="@mipmap/rbbg"
+            android:text="首页"
+            android:textSize="@dimen/micro_text_size"
+            android:drawableTop="@drawable/home_tab_index_selector"/>
+
+        <RadioButton
+            android:id="@+id/home_tab_product"
+            style="@style/home_tab_bottom"
+            android:background="@mipmap/rbbg"
+            android:text="商盟"
+            android:textSize="@dimen/micro_text_size"
+            android:drawableTop="@drawable/home_tab_pro_selector"/>
+
+        <RadioButton
+            android:id="@+id/home_tab_near"
+            style="@style/home_tab_bottom"
+            android:background="@mipmap/rbbg"
+            android:text="邻里"
+            android:textSize="@dimen/micro_text_size"
+            android:drawableTop="@drawable/home_tab_near_selector"/>
+
+       <RadioButton
+            android:id="@+id/home_tab_mine"
+           style="@style/home_tab_bottom"
+           android:background="@mipmap/rbbg"
+           android:text="我的"
+           android:textSize="@dimen/micro_text_size"
+           android:drawableTop="@drawable/home_tab_mine_selector"/>
+
+    </RadioGroup>
+
+</RelativeLayout>

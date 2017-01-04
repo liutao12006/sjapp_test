@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">上街大管家</string>
+    <string name="app_pic">这是图片</string>
+
+    <string name="app_login">登陆</string>
+    <string name="app_find">找回密码</string>
+    <string name="app_reg">注册</string>
+    <string name="app_near">邻里</string>
+
+    <string name="app_yh">大管家超市</string>
+    <string name="app_point">积分商城</string>
+    <string name="app_life">生活管家</string>
+    <string name="app_prod">商品详情</string>
+    <string name="app_pub">发布动态</string>
+    <string name="app_msg">动态详情</string>
+    <string name="app_property">物业费</string>
+
+    <string name="app_user">个人信息</string>
+    <string name="app_nick">修改昵称</string>
+    <string name="app_sex">修改性别</string>
+    <string name="app_pwd">修改密码</string>
+    <string name="app_note">缴费记录</string>
+    <string name="app_ads">绑定小区</string>
+
+    <string name="app_adss">我的小区</string>
+
+    <string name="scan_text">扫描二维码，即可操作</string>
+    <string name="scan_content">文本内容：</string>
+
+    <string name="app_set">设置</string>
+    <string name="app_idea">意见反馈</string>
+
+    <!-- WXPay -->
+    <string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/app_margin_small">
+
+    <wbkj.sjapp.views.CircleImageView
+        android:id="@+id/cmt_img_user"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/user_head"
+        android:layout_margin="@dimen/app_margin_small"/>
+
+    <TextView
+        android:id="@+id/cmt_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="昵称昵称"
+        android:textSize="@dimen/small_middle_text_size"
+        android:layout_alignTop="@+id/cmt_img_user"
+        android:layout_toRightOf="@+id/cmt_img_user"
+        android:layout_toEndOf="@+id/cmt_img_user" />
+
+    <RatingBar
+        android:id="@+id/cmt_rating"
+        style="@style/My_RatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:progressDrawable="@drawable/rating_bar"
+        android:numStars="5"
+        android:isIndicator="true"
+        android:rating="4.1"
+        android:layout_alignBottom="@+id/cmt_img_user"
+        android:layout_alignLeft="@+id/cmt_tv_name"
+        android:layout_alignStart="@+id/cmt_tv_name" />
+
+    <TextView
+        android:id="@+id/cmt_tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2016-03-30"
+        android:textSize="@dimen/small_text_size"
+        android:layout_alignTop="@+id/cmt_img_user"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+       />
+
+    <TextView
+        android:id="@+id/cmt_tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="内容内容内容内容内容内容内容内容内容内容内容内容"
+        android:textSize="@dimen/small_middle_text_size"
+        android:layout_below="@+id/cmt_img_user"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="@dimen/app_margin_small"
+        android:paddingRight="@dimen/app_margin_small"/>
+
+</RelativeLayout>

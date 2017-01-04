@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="wbkj.sjapp.activity.DiscountProActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/toolbar_color">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="@string/app_yh"
+            android:textSize="@dimen/medium_text_size"
+            android:textColor="@color/white"/>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+<!--
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/dis_pro_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+-->
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/btn_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:button="@null"
+                android:textColor="@color/selector_tab_text"
+                android:gravity="center"
+                android:background="@mipmap/bg_radiobutton"
+                android:text="烟酒"/>
+
+            <RadioButton
+                android:id="@+id/btn_discover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:button="@null"
+                android:textColor="@color/selector_tab_text"
+                android:gravity="center"
+                android:background="@mipmap/bg_radiobutton"
+                android:text="蔬菜"/>
+
+            <RadioButton
+                android:id="@+id/btn_shengxian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:button="@null"
+                android:textColor="@color/selector_tab_text"
+                android:gravity="center"
+                android:background="@mipmap/bg_radiobutton"
+                android:text="生鲜"/>
+
+            <RadioButton
+                android:id="@+id/btn_lengcang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:button="@null"
+                android:textColor="@color/selector_tab_text"
+                android:gravity="center"
+                android:background="@mipmap/bg_radiobutton"
+                android:text="冷藏"/>
+
+            <RadioButton
+                android:id="@+id/btn_liangyou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:button="@null"
+                android:textColor="@color/selector_tab_text"
+                android:gravity="center"
+                android:background="@mipmap/bg_radiobutton"
+                android:text="粮油"/>
+
+            <RadioButton
+                android:id="@+id/btn_wenju"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:button="@null"
+                android:textColor="@color/selector_tab_text"
+                android:gravity="center"
+                android:background="@mipmap/bg_radiobutton"
+                android:text="文具"/>
+
+            <RadioButton
+                android:id="@+id/btn_richang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:button="@null"
+                android:textColor="@color/selector_tab_text"
+                android:gravity="center"
+                android:background="@mipmap/bg_radiobutton"
+                android:text="日常用品"/>
+
+            <RadioButton
+                android:id="@+id/btn_foot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:button="@null"
+                android:textColor="@color/selector_tab_text"
+                android:gravity="center"
+                android:background="@mipmap/bg_radiobutton"
+                android:text="食品"/>
+        </RadioGroup>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/dis_pro_recy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+   <!--
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/dis_pro_recy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+-->
+</LinearLayout>

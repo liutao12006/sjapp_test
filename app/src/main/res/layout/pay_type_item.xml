@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/app_margin"
+    android:descendantFocusability="blocksDescendants">
+    
+    <ImageView
+        android:layout_centerVertical="true"
+        android:id="@+id/iv_pay_type_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:layout_margin="5dp"
+        android:src="@mipmap/alipay"
+        android:layout_alignParentLeft="true"
+        android:contentDescription="@string/app_pic" />
+    
+    <TextView
+        android:layout_marginLeft="@dimen/app_margin_left"
+        android:id="@+id/tv_pay_type_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="xxx"
+        android:textSize="@dimen/medium_text_size"
+	    android:layout_toRightOf="@id/iv_pay_type_logo"
+        android:textColor="@color/black"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/app_margin" />
+    
+    <TextView
+        android:id="@+id/tv_pay_type_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray"
+        android:singleLine="true"
+        android:text="xxx"
+        android:maxLength="10"
+        android:ellipsize = "end"
+        android:layout_below="@+id/tv_pay_type_name"
+        android:layout_marginTop="@dimen/app_margin_small"
+        android:layout_alignLeft="@+id/tv_pay_type_name"
+        android:layout_alignStart="@+id/tv_pay_type_name" />
+
+    <CheckBox
+        android:id="@+id/cb_pay_type_selected"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+	    android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/app_margin"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

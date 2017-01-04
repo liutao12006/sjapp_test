@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="wbkj.sjapp.activity.LifeHelpActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/toolbar_color">
+        <TextView
+            android:id="@+id/index_tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="@string/app_life"
+            android:textSize="@dimen/medium_text_size"
+            android:textColor="@color/white"/>
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/life_help"
+                android:scaleType="fitXY"
+                android:visibility="gone"
+                android:contentDescription="@string/app_pic"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:background="@color/white">
+                <TextView
+                    android:id="@+id/tv_jdwx"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/tv_jdwx_img"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:text="家电维修" />
+                <View
+                    android:layout_width="0.3dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_white" />
+
+                <TextView
+                    android:id="@+id/tv_jzfw"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/tv_jzxy_img"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:text="家政洗衣" />
+                <View
+                    android:layout_width="0.3dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_white" />
+
+                <TextView
+                    android:id="@+id/tv_ks"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/tv_ksfw_img"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:text="开锁修锁" />
+                <View
+                    android:layout_width="0.3dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_white" />
+
+                <TextView
+                    android:id="@+id/tv_bjfw"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:drawableTop="@mipmap/tv_bjlh_img"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"
+                    android:textSize="14sp"
+                    android:text="搬家拉货"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/gray_white" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:background="@color/white">
+
+                <View
+                    android:layout_width="0.3dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_white" />
+
+                <TextView
+                    android:id="@+id/tv_zdg"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:drawableTop="@mipmap/tv_bjqx_img"
+                    android:drawablePadding="10dp"
+                    android:textSize="14sp"
+                    android:text="保洁清洗"
+                    android:padding="@dimen/app_margin"/>
+
+                <View
+                    android:layout_width="0.3dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_white" />
+
+                <TextView
+                    android:id="@+id/tv_yygh"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:drawableTop="@mipmap/tv_jkfw_img"
+                    android:drawablePadding="10dp"
+                    android:textSize="14sp"
+                    android:text="健康服务"
+                    android:padding="@dimen/app_margin"/>
+                <TextView
+                    android:id="@+id/tv_jdqx"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/tv_sdaz_img"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:text="水电安装" />
+                <View
+                    android:layout_width="0.3dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_white" />
+
+                <TextView
+                    android:id="@+id/tv_ss"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/tv_ss_img"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:text="送水站" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/gray_white" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:background="@color/white">
+                <TextView
+                    android:id="@+id/tv_ywpj"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:drawableTop="@mipmap/tv_ywpj_img"
+                    android:drawablePadding="10dp"
+                    android:textSize="14sp"
+                    android:text="衣物/皮具"
+                    android:padding="@dimen/app_margin"/>
+                <View
+                    android:layout_width="0.3dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_white" />
+                <TextView
+                    android:id="@+id/tv_dmxp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:drawableTop="@mipmap/tv_dmxp_img"
+                    android:drawablePadding="10dp"
+                    android:textSize="14sp"
+                    android:text="电摩修配"
+                    android:padding="@dimen/app_margin"/>
+                <View
+                    android:layout_width="0.3dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_white" />
+                <TextView
+                    android:id="@+id/tv_qmkx"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/tv_qmkx_img"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:text="取名看相" />
+                <View
+                    android:layout_width="0.3dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_white" />
+                <TextView
+                    android:id="@+id/tv_dnaf"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/tv_dnaf_img"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:text="电脑安防" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/gray_white" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:background="@color/white">
+                <TextView
+                    android:id="@+id/tv_sjwx"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:drawableTop="@mipmap/tv_sjwx_img"
+                    android:drawablePadding="10dp"
+                    android:textSize="14sp"
+                    android:text="手机维修"
+                    android:padding="@dimen/app_margin"/>
+                <View
+                    android:layout_width="0.3dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_white" />
+                <TextView
+                    android:id="@+id/tv_bmys"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:drawableTop="@mipmap/tv_bmys_img"
+                    android:drawablePadding="10dp"
+                    android:textSize="14sp"
+                    android:text="保姆月嫂 "
+                    android:padding="@dimen/app_margin"/>
+                <View
+                    android:layout_width="0.3dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_white" />
+
+                <TextView
+                    android:id="@+id/tv_xhlz"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/tv_xhlz_img"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:text="鲜花绿植" />
+
+                <View
+                    android:layout_width="0.3dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_white" />
+                <TextView
+                    android:id="@+id/tv_qcfw"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/tv_qcfw_img"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:text="汽车服务" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/gray_white" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:background="@color/white">
+                <TextView
+                    android:id="@+id/tv_jzzl"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:drawableTop="@mipmap/tv_jzzl_img"
+                    android:drawablePadding="10dp"
+                    android:textSize="14sp"
+                    android:text="建筑租赁"
+                    android:padding="@dimen/app_margin"/>
+                <View
+                    android:layout_width="0.3dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_white" />
+                <TextView
+                    android:id="@+id/tv_fpsg"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:drawableTop="@mipmap/tv_fpss_img"
+                    android:drawablePadding="10dp"
+                    android:textSize="14sp"
+                    android:text="废品收售 "
+                    android:padding="@dimen/app_margin"/>
+                <View
+                    android:layout_width="0.3dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_white" />
+                <TextView
+                    android:id="@+id/tv_zpcx"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/tv_zpcx_img"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:text="照片冲印" />
+                <View
+                    android:layout_width="0.3dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_white" />
+                <TextView
+                    android:id="@+id/tv_cwfw"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/tv_cwfw_img"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:text="宠物服务" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/gray_white" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:background="@color/white">
+                <TextView
+                    android:id="@+id/tv_czfw"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:drawableTop="@mipmap/tv_czfw_img"
+                    android:drawablePadding="10dp"
+                    android:textSize="14sp"
+                    android:text="充值服务"
+                    android:padding="@dimen/app_margin"/>
+                <View
+                    android:layout_width="0.3dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_white" />
+                <TextView
+                    android:id="@+id/tv_myqz"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:drawableTop="@mipmap/tv_myqz_img"
+                    android:drawablePadding="10dp"
+                    android:textSize="14sp"
+                    android:text="母婴亲子"
+                    android:padding="@dimen/app_margin"/>
+                <View
+                    android:layout_width="0.3dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_white" />
+                <TextView
+                    android:id="@+id/tv_pj"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/tv_pj_img"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:text="配镜" />
+                <View
+                    android:layout_width="0.3dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_white" />
+
+                <TextView
+                    android:id="@+id/tv_kcpx"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/tv_pxkc_img"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:text="培训课程 " />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/gray_white" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:background="@color/white">
+                <TextView
+                    android:id="@+id/tv_hcsy"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:drawableTop="@mipmap/tv_hssy_img"
+                    android:drawablePadding="10dp"
+                    android:textSize="14sp"
+                    android:text=" 婚纱摄影 "
+                    android:padding="@dimen/app_margin"/>
+                <View
+                    android:layout_width="0.3dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_white" />
+                <TextView
+                    android:id="@+id/tv_scgwk"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:drawableTop="@mipmap/tv_scgwk_img"
+                    android:drawablePadding="10dp"
+                    android:textSize="14sp"
+                    android:text="商场购物卡"
+                    android:padding="@dimen/app_margin"/>
+                <View
+                    android:layout_width="0.3dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_white" />
+                <TextView
+                    android:id="@+id/tv_qtsh"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/tv_qtsh_img"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:text="其它生活" />
+                <View
+                    android:layout_width="0.3dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_white" />
+                <TextView
+                    android:id="@+id/tv_jdwx_threeth"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/img_test"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:visibility="invisible"
+                    android:text="家电维修" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

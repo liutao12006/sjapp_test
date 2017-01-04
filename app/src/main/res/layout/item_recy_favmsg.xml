@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/msg_fav_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="@dimen/app_margin"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/app_pic" />
+
+    <TextView
+        android:id="@+id/msg_fav_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="昵称"
+        android:layout_alignTop="@+id/msg_fav_img"
+        android:layout_toRightOf="@+id/msg_fav_img"
+        android:layout_toEndOf="@+id/msg_fav_img" />
+
+    <TextView
+        android:id="@+id/msg_fav_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2016-1-11"
+        android:textSize="@dimen/small_text_size"
+        android:layout_toRightOf="@+id/msg_fav_name"
+        android:layout_alignBaseline="@+id/msg_fav_name"
+        android:layout_marginLeft="@dimen/app_margin"/>
+
+    <TextView
+        android:id="@+id/msg_fav_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="内容内容内容内容内容内容"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textSize="@dimen/small_middle_text_size"
+        android:layout_toRightOf="@+id/msg_fav_img"
+        android:layout_below="@+id/msg_fav_name"
+        android:layout_marginTop="@dimen/app_margin_small"
+        android:layout_marginRight="@dimen/app_margin"/>
+
+</RelativeLayout>

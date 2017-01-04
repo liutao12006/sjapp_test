@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/app_margin_small">
+
+    <ImageView
+        android:id="@+id/item_shop_img"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/demo"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/app_pic"
+        android:layout_margin="@dimen/app_margin_small"/>
+
+    <TextView
+        android:id="@+id/item_shop_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="大圣传"
+        android:textColor="@color/black"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="@dimen/medium_text_size"
+        android:layout_toRightOf="@+id/item_shop_img"
+        android:layout_toEndOf="@+id/item_shop_img"
+        android:layout_margin="@dimen/app_margin_small"/>
+
+    <RatingBar
+        android:id="@+id/item_shop_rating"
+        style="@style/My_RatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:progressDrawable="@drawable/rating_bar"
+        android:numStars="5"
+        android:isIndicator="true"
+        android:rating="4.1"
+        android:layout_below="@+id/item_shop_name"
+        android:layout_alignLeft="@+id/item_shop_name"
+        android:layout_alignStart="@+id/item_shop_name"
+        android:layout_marginTop="@dimen/app_margin_small"/>
+
+    <TextView
+        android:id="@+id/shop_item_loc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/shop_dis"
+        android:gravity="center_vertical"
+        android:text="2km"
+        android:textSize="@dimen/small_text_size"
+        android:layout_alignBottom="@+id/item_shop_img"
+        android:layout_alignRight="@+id/item_shop_name"
+        android:layout_alignEnd="@+id/item_shop_name"
+        android:layout_marginBottom="@dimen/app_margin"/>
+
+    <TextView
+        android:id="@+id/shop_item_ads"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="地址地址地址地址"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textSize="@dimen/small_text_size"
+        android:layout_alignBottom="@+id/item_shop_img"
+        android:layout_toLeftOf="@+id/shop_item_loc"
+        android:layout_alignLeft="@+id/item_shop_rating"
+        android:layout_alignStart="@+id/item_shop_rating"/>
+
+</RelativeLayout>

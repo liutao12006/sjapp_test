@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_white" >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/toolbar_color">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="@string/app_pwd"
+            android:textSize="@dimen/medium_text_size"
+            android:textColor="@color/white"/>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+        <EditText
+            android:id="@+id/modify_et_oldpwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="老密码"
+            android:textSize="@dimen/small_middle_text_size"
+            android:padding="@dimen/app_margin_right"
+            android:layout_margin="@dimen/app_margin"/>
+        <EditText
+            android:id="@+id/modify_et_newpwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="新密码"
+            android:textSize="@dimen/small_middle_text_size"
+            android:padding="@dimen/app_margin_right"
+            android:layout_marginLeft="@dimen/app_margin"
+            android:layout_marginRight="@dimen/app_margin"/>
+        <EditText
+            android:id="@+id/modify_et_anewpwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="确认新密码"
+            android:textSize="@dimen/small_middle_text_size"
+            android:padding="@dimen/app_margin_right"
+            android:layout_margin="@dimen/app_margin"/>
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="修改"
+            android:textSize="@dimen/small_middle_text_size"
+            android:textColor="@color/white"
+            android:background="@mipmap/login_btn_back"
+            android:layout_marginLeft="@dimen/app_margin_right"
+            android:layout_marginRight="@dimen/app_margin_right"
+            android:layout_marginBottom="@dimen/app_margin_right"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ShopDetailActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/toolbar_color"
+        android:theme="@style/ToolBarStyle">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="店铺详情"
+            android:textSize="@dimen/medium_text_size"
+            android:textColor="@color/white"/>
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+            <requestFocus />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:background="@color/white"
+                android:padding="@dimen/app_margin">
+                <ImageView
+                    android:id="@+id/shop_img"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginLeft="@dimen/app_margin"
+                    android:contentDescription="@string/app_pic"/>
+                <TextView
+                    android:id="@+id/shop_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="名称名称"
+                    android:textSize="@dimen/medium_large_text_size"
+                    android:textColor="@color/black"
+                    android:layout_alignTop="@+id/shop_img"
+                    android:layout_toRightOf="@+id/shop_img"
+                    android:layout_toEndOf="@+id/shop_img"
+                    android:layout_marginLeft="@dimen/app_margin"
+                    android:layout_marginTop="@dimen/app_margin"/>
+                <RatingBar
+                    android:id="@+id/shop_rating"
+                    style="@style/My_RatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:progressDrawable="@drawable/rating_bar"
+                    android:numStars="5"
+                    android:isIndicator="true"
+                    android:rating="4.1"
+                    android:layout_alignBottom="@+id/shop_img"
+                    android:layout_alignLeft="@+id/shop_name"
+                    android:layout_alignStart="@+id/shop_name" />
+                <TextView
+                    android:id="@+id/shop_cmt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(10人评)"
+                    android:textSize="@dimen/small_text_size"
+                    android:layout_alignTop="@+id/shop_rating"
+                    android:layout_toRightOf="@+id/shop_rating" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/gray_white" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/shop_ads"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@mipmap/shop_loc"
+                    android:text="地址地址地址地址地址"
+                    android:clickable="true"
+                    android:textSize="@dimen/small_middle_text_size"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:drawablePadding="@dimen/app_margin"
+                    android:padding="@dimen/app_margin"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:background="@color/gray_white" />
+                <TextView
+                    android:id="@+id/shop_tel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@mipmap/shop_phone"
+                    android:text="13007131300"
+                    android:textColor="@color/toolbar_color"
+                    android:textSize="@dimen/small_middle_text_size"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:drawablePadding="@dimen/app_margin"
+                    android:padding="@dimen/app_margin"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/gray_white" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="产品列表"
+                android:padding="@dimen/app_margin" />
+            <wbkj.sjapp.views.CustomListView
+                android:id="@+id/pro_recy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </wbkj.sjapp.views.CustomListView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
