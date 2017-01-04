@@ -53,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
         tv =(TextView) findViewById(R.id.textview);
 
         System.out.print("想你的我在花丛中留恋");
+        System.out.print("    ************      ");
 
         initLocation();
 
